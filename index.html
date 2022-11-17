@@ -1,28 +1,300 @@
-<p>Hello there! I am Yule Wang, an NLP Machine Learning Engineer and a Physics Ph.D.</p>
-<p>This is my personal website. </p>
-<p>My LinkedIn profile is:</p>
+<html>
 
-<ul>
-  <li> <a href="https://www.linkedin.com/in/yule-wang-ml/">LinkedIn</a> </li>
-  <!--<li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>-->
-</ul>
+<head>
+	<title>Yule Wang</title>
+	<meta name="description" content="Yule Wang">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="icon" href="image/icon.png">
 
-<!DOCTYPE html>
-<html> 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47591515-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-47591515-2');
+	</script>
+
+</head>
+
 <body>
+	<header>
+		<h1>Yule Wang</h1>
+	</header>
 
-<video width="400" controls>
-  <source src="mov_bbb.mp4" type="video/mp4">
-  <source src="mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML video.
-</video>
+	<div id="left">
+		<section id="articles">
 
-<p>
-Video of
-<a href="https://github.com/yulew/PhDProject/blob/main/Animations/animation_perco_low_corr.mp4" target="_blank">Fracture Dynamics of a polymer network</a>.
-</p>
+			<!-- ====================================================================================================================================================================== -->
+			<!-- ================================================================================ work ================================================================================ -->
+			<!-- ====================================================================================================================================================================== -->
+			<section id="work">
+				<h1>Professional Work Experience</h1>
 
-</body> 
+				<h4 id="company">SoundHound Inc. (Former)</h4>
+				<h5 id="italic">Machine Learning Engineer II</h5>
+                <pre>
+                    Developed the VoiceAI that was used for various platforms:
+                    Mobile Conversational APPs, Car Voice Assistants for Mercedes and Hyundai, and Restaurants AI Voice Order System.
+                    Particularly focus on badly-form conversational user voice queries voice.
+                </pre>
+
+				<ul>
+					<li>Built and maintained a Audio-Text Command Query Noise Detector using Distil-RoBERTa (BERT)
+                        transformer neural network, that could filter out 40% of noisy user voice-commands and resulted
+                        in a reduction of 20% of processing time in the real-time query stream production pipelines.
+                    </li>
+                    <li>Defined noisy queries for production feasibility purposes and user-centric purposes.
+                        Automated a backend benchmarking analytics pipeline of production noisy queries.
+                    </li>
+                    <li>Developed a Rule-Based NLP program for recognizing valid user-commands and created a Grammar-Detector together
+                        to assist the auto-labeling of the noisy training dataset (in which only 0.5% were properly manually labeled)
+                        by implementing entity extraction, parsing and Part-of-speech (POS) tagging using spaCy.
+                    </li>
+                    <li>Created and maintained a pipeline that could automatically add more rule-based patterns
+                        when new production queries comes by implementing spaCy.</li>
+                    <li>Experimented in Bayesian semi-supervised classification
+                        that can potentially correct the biased rule-based auto-labeling processes mentioned above.
+                    </li>
+
+                    <li>Performed text mining of the user intentions and sentence structural patterns to detect
+                        whether a user query that provides complex characteristics, such as a query that has multiple intents
+                        or a question in a query that provides multiple choices to compare between or choose from. Programmed a tool
+                        to suggest proper text regeneration and responses.
+                    </li>
+				</ul>
+
+				<h4 id="company">Applied Quantitative Methods (AQM), Co-op </h4>
+				<h5 id="italic">Data Analyst</h5>
+                <pre>
+                    Cross-team with Best Buy Data Team to perform Twitter Data Analytics
+                </pre>
+				<ul>
+					<li>Built a content-based spam tweets filtering system using Naive Bayesian classifier, that reached an accuracy of 90%.</li>
+                    <li>Developed a sentiment analysis model to evaluate the satisfaction improvement of
+                        customers after they were being responded to by Best Buy customer service on Twitter
+                        using the support vector machines (SVM).</li>
+                    <li>Successfully classified different topics for Best Buy tweets using the Latent Dirichlet Allocation (LDA).</li>
+                    <li>Performed gender classifications of Twitter usernames  and achieved an accuracy of 92%,
+                        by implementing the s\textit{emi-supervised} character n-grams algorithm.</li>
+				</ul>
+
+
+
+			</section>
+
+			<!-- ====================================================================================================================================================================== -->
+			<!-- ============================================================================= education ============================================================================== -->
+			<!-- ====================================================================================================================================================================== -->
+			<section id="education">
+				<h1>Education</h1>
+				<h4 id="sfu">Simon Fraser University</h4>
+				<h5 id="italic">PhD in Physics, 2021</h5>
+				<p>
+					Longitudinal Data Analysis &bullet;
+					Non-parametric Regression &bullet;
+					Causal Inference and Graphical Models &bullet;
+					Hypothesis Testing &bullet;
+					Sampling &bullet;
+					Stochastic Processes
+				</p>
+
+				<h4 id="sfu">Simon Fraser University</h4>
+				<h5 id="italic">MSc in Physics</h5>
+				<p>
+					Mathematical Statistics &bullet;
+					Experimental Design &bullet;
+					Applied Probabilities &bullet;
+					Classification &bullet;
+					Data Visualization &bullet;
+					Generalized Linear Models &bullet;
+					Spatial Data Analysis &bullet;
+					Statistical Learning &bullet;
+					Data Structures
+				</p>
+
+				<h4 id="uw">Online Courses</h4>
+				<p>
+					<h5 id="italic">Udemy</h5>
+					<ul>
+						<li>Natural Language Processing with Deep Learning in Python</li>
+					</ul>
+					<h5 id="italic">EdX</h5>
+					<ul>
+						<li>Introduction to Big Data with Apache Spark</li>
+						<li>Scalable Machine Learning</li>
+					</ul>
+					<h5 id="italic">Coursera</h5>
+					<ul>
+						<li>Deep Learning Specialization (5 Courses)</li>
+						<li>Machine Learning</li>
+						<li>Data Science Specialization (9 Courses)</li>
+					</ul>
+				</p>
+			</section>
+
+			<!-- ====================================================================================================================================================================== -->
+			<!-- =============================================================================== others =============================================================================== -->
+			<!-- ====================================================================================================================================================================== -->
+			<section id="Data & Machine Learning Awards ">
+				<h1>Kaggle</h1>
+				<p>Bronze Metal &amp; 1st in NA, <u>2017 International Data Mining Cup</u> &mdash; Online shopping revenue prediction.</p>
+				<p>1st Place, <u>2015 6sense DataHack</u> &mdash; Yelp-for-business: where should I open the restaurant? <a href="https://6sense.com/2015/08/datahack-2015-65-coders-14-teams-and-a-lot-of-data/">Press</a></p>
+				<p>1st Place, <u>2015 Capital One Data Mining Cup</u> &mdash; Break-even-bid price prediction for search engine advertaisement.</p>
+			</section>
+
+			<section id="talk">
+				<h1>Talks</h1>
+				<p>Adversarial Attacks and Defenses on Computer Vision Systems and Their Impact to Regulated Industries, <i>Vector Institute ESS2</i>, Nov 2017.</p>
+			</section>
+
+	</div>
+
+
+	<!-- ====================================================================================================================================================================== -->
+	<!-- ============================================================================== side bar ============================================================================== -->
+	<!-- ====================================================================================================================================================================== -->
+	<div id="right">
+		<section id="interest">
+			<h1>Areas of Interest</h1>
+			<ul>
+				<li>Machine Learning</li>
+				<li>Data Mining</li>
+				<li>Statistical Modeling</li>
+				<li>Natural Language Processing</li>
+			</ul>
+		</section>
+
+		<section id="software">
+		  <h1>Summary of Qualifications</h1>
+		  <h3>Programming Languages</h3>
+		  <ul>
+			  <li>Python, Jupyter</li>
+			  <li>R</li>
+			  <li>{My, MS, Mem}SQL, MongoDB, Redis</li>
+			  <li>MATLAB</li>
+			  <li>SAS</li>
+		  </ul>
+		  <h3>Experienced Packages</h3>
+		  <ul>
+			  <li>Python: numpy, scipy, pandas, sklearn, tensorflow, keras, h2o, pyspark, xgboost, opencv, spacy, gensim, nltk, matplotlib, seaborn, bokeh, plotly, eli5, shap, flask</li>
+			  <li>R: rpart, caret, lme4, ggplot, dplyr, tidyverse, glmnet, h2o, keras</li>
+		  </ul>
+		  <h3>Favorite Editor</h3>
+		  <ul>
+			  <li>Atom: because it has my name in it</li>
+		  </ul>
+		</section>
+
+		<section id="contact">
+			<h1>Links</h1>
+			<ul>
+				<li><a id="resume" target="_blank" href="file/yule_wang_resume.pdf" class="button">Resume Download</a></li>
+				<li><a id="github" href="https://github.com/yulew/" target="_blank">Github</a></li>
+				<li><a id="linkedin" href="https://www.linkedin.com/in/yule-wang-ml/" target="_blank">LinkedIn</a></li>
+				<li><a id="kaggle" href="https://www.kaggle.com/moonswords" target="_blank">Kaggle</a></li>
+				<li><a href="yulemoon@gmail.com">Email</a></li>
+			</ul>
+		</section>
+
+		<section id="hobby">
+			<h1>Hobbies</h1>
+			<ul>
+				<li>Badminton</li>
+				<li>Soccer</li>
+				<li>Photography</li>
+				<li>Puzzles (Rubik's Cube, Sudoku)</li>
+				<li>Mystery</li>
+			</ul>
+		</section>
+	</div>
+</body>
+
 </html>
+<!--<p>Hello there! I am Yule Wang, an NLP Machine Learning Engineer and a Physics Ph.D.</p>-->
+<!--<p>This is my personal website. </p>-->
+<!--<p>My LinkedIn profile is:</p>-->
+
+<!--<ul>-->
+  <!--<li> <a href="https://www.linkedin.com/in/yule-wang-ml/">LinkedIn</a> </li>-->
+<!--</ul>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<title> Yule Wang's homepage</title>-->
 
 
+<!--<body>-->
+
+<!--<video width="400" controls>-->
+  <!--<source src="mov_bbb.mp4" type="video/mp4">-->
+  <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+  <!--Your browser does not support HTML video.-->
+<!--</video>-->
+
+<!--<p>-->
+<!--Video of-->
+<!--<a href="https://github.com/yulew/PhDProject/blob/main/Animations/animation_perco_low_corr.mp4" target="_blank">Fracture Dynamics of a polymer network</a>.-->
+<!--</p>-->
+
+<!--</body> -->
+<!--</html>-->
+
+
+<!--<html>-->
+	<!--<head>-->
+		<!--<meta>-->
+		<!--<title>{% block title %}Yule Wang{% endblock %}</title>-->
+		<!--<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/main.css">-->
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+	<!--</head>-->
+	<!--<body>-->
+		<!--<div id="container">-->
+			<!--<header>-->
+				<!--<h1><a href = "/">Yule Wang</a></h1>-->
+				<!--<nav id="menu">-->
+					<!--<ul>-->
+						<!--<li id="menu1"><a class="LinkedIn" href="https://www.linkedin.com/in/yule-wang-ml/">LinkedIn</a></li>-->
+						<!--&lt;!&ndash;<li id="menu2"><a class="face" href="https://www.facebook.com/cesarvargas00">face</a></li>&ndash;&gt;-->
+						<!--&lt;!&ndash;<li id="menu3"><a class="twitter" href="https://twitter.com/madasheila">twitter</a></li>&ndash;&gt;-->
+					<!--</ul>-->
+				<!--</nav>-->
+			<!--</header>-->
+			<!--<section id="content">-->
+				<!--&lt;!&ndash;{% block content %}&ndash;&gt;-->
+					<!--&lt;!&ndash;{% for p in ultimos_posts%}&ndash;&gt;-->
+					<!--<h2>{{p.title}}</h2>-->
+					<!--<h3>Posted in {{p.data}} #<a href="/post/{{p.id}}/#disqus_thread"> 0 Comments</a></h3>-->
+					<!--{% if user.is_authenticated %}<a href="/apagar/{{p.id}}">remove</a>{% endif %}-->
+					<!--<div class="post">-->
+						<!--<p>-->
+						<!--{{p.conteudo|markdown:"safe"}}-->
+						<!--</p>-->
+						<!--<a href="/post/{{p.id}}" class="more">. . .more</a>-->
+					<!--</div>-->
+					<!--{%endfor%}-->
+					<!--<div class="navigation">&lt&nbsp&nbsp&nbsp&gt</div>-->
+				<!--{% endblock %}-->
+			<!--</section>-->
+			<!--<footer>-->
+				<!--<a href="#">about</a>-->
+				<!--<a href="/history">history</a>-->
+				<!--{% if user.is_authenticated %}<a href="/logout">logout</a>{% else %}<a href="/login">login</a>{% endif %}-->
+			<!--</footer>-->
+		<!--</div>-->
+		<!--{% block scripts %}-->
+		<!--<script type="text/javascript">-->
+        <!--/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */-->
+        <!--var disqus_shortname = 'cesarblog'; // required: replace example with your forum shortname-->
+
+        <!--/* * * DON'T EDIT BELOW THIS LINE * * */-->
+        <!--(function () {-->
+            <!--var s = document.createElement('script'); s.async = true;-->
+            <!--s.type = 'text/javascript';-->
+            <!--s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';-->
+            <!--(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);-->
+        <!--}());-->
+        <!--</script>-->
+        <!--{% endblock %}-->
+	<!--</body>-->
+<!--</html>-->
